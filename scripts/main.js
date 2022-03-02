@@ -1,5 +1,7 @@
 const Base__Url = 'https://tribe.api.fdnd.nl/v1/member'
 const postForm = document.querySelector('#postform')
+const squadValue = document.querySelector('#squad')
+
 
 const renderMember = (data) => {
     data.data.forEach(post => {
@@ -22,8 +24,22 @@ fetch(Base__Url)
 
 // Nieuwe members toevoegen
 
-postForm.addEventListener('submit', (event) => {
-    event.preventDefault()
+postForm.addEventListener('submit',(event) => {
+    event.preventDefault();
+    console.log(idValue.value)
+    fetch(Base__Url, {
+        method:'post',
+        headers: {
+            'Content-Type': 'applicatie/json'
+        },
+        // body: JSON.stringify({
+        //     title:
+        // })
+
+
+    })
+
+    
  
 
 })
