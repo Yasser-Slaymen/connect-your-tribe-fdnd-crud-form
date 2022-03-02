@@ -64,7 +64,7 @@ input:hover{
     background-color:#0086FF ;
     transform: translateY(3px);
 }
-.posts__list{
+.list{
     background-color:#C7EAFF;
     margin: 2em;
     border-radius: 1em;
@@ -85,3 +85,6 @@ h2{
     padding: .5em;
 
 }
+/* .test{
+   
+} */

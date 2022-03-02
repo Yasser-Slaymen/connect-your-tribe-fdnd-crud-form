@@ -1,22 +1,36 @@
-const post__list = document.querySelector('.posts__list')
 const Base__Url = 'https://tribe.api.fdnd.nl/v1/member'
-// let output = 'hallo';
+const postForm = document.querySelector('#postform')
+
+const renderMember = (data) => {
+    data.data.forEach(post => {
+        // console.log(post)            
+       const Api__member = document.querySelector('.api__member').innerHTML +=
+       `<h4 class="test">${post.name} ${post.surname}</h4>`
+   
+    })
+
+}
+
 
 // red the post
 // method: Get
 
 fetch(Base__Url)
-    .then(response => response.json())
-    .then(data => {
-        data.data.forEach(post => {
-            post__list.innerHTML +=`
-            <article >
-            <h2>Updating informatie</h2>
+    .then(res =>  res.json())
+    .then(data => renderMember(data))
 
-           </article> `
-            
-            
-            
-        })
-        
-    })
+
+// Nieuwe members toevoegen
+
+postForm.addEventListener('submit', (event) => {
+    event.preventDefault()
+ 
+
+})
+
+
+
+
+    
+
+   
