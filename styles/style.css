@@ -6,24 +6,48 @@
 
 body{
     display: grid;
-    place-items: center;
-    max-width: 1000px;
-    margin: 0 auto;
+    grid-template-rows: auto 1fr auto ;
     background-color:#F4ECFF ;
+    overflow: hidden;
+    max-width: 1000px;
+   
 }
-h1{
-    padding: 1em;
+header{
+    background-color: #FF6163
+    ;
+    height: 7vh;
+}
+h1{ 
+    padding: .5em;
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+
+}
+
+main{
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+    margin: 0 1em;
+   
     
+
 }
 
 form{
-    width: 500px;
-    margin:0 auto;
+
+    grid-column:1/2;
+    margin-top: 2em;
+    width:30vw;
+    height:78vh;
     border: 2px solid #E4460C;
     padding:1em ;
     border-radius: .5em;
     box-shadow: 3px 3px 3px #AD3A82 ;
 
+}
+fieldset{
+    padding: .2em;
 }
 
 label{
@@ -47,7 +71,7 @@ input:hover{
     background-color:#F1F6F6 ;
 }
 
-#submit{
+.btn{
     border: 0;
     padding:.5em;
     border-radius: .2em;
@@ -60,7 +84,7 @@ input:hover{
    
 }
 
-#btn__submit:hover{
+.btn:hover{
     background-color:#0086FF ;
     transform: translateY(3px);
 }
@@ -82,9 +106,55 @@ input:hover{
 }
 
 h2{
+    position:sticky;
+    top: .2px;
+    text-align: center;
+    background-color:#F4ECFF ;
+    width: 92%;
     padding: .5em;
+}
+/* section studenten  */
+
+.post__list{
+    grid-column:3/4;
+    background-color:transparent;
+    display: grid;
+    place-items: center;
+    width: 70vw;
+    height: 87vh;
+    overflow-x: hidden;
 
 }
-/* .test{
-   
-} */
+
+h4{
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    font-family: sans-serif;
+    font-weight: unset;
+    text-transform: uppercase;
+    
+}
+.studenten__api{
+    background-color: #0086FF;
+    margin:1em;
+    padding: 1em;
+    width:30vw;
+}
+.api__member{
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+/* footer */
+footer{
+    background-color:#FF6163 ;
+    height: 7vw;
+    
+}
+.logo{
+    position: absolute;
+    right: 1em;
+    padding: .5em;
+    width: 110px;
+}

@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fdnd-crud-form</title>
     <link rel="stylesheet" href="styles/style.css">
-    <script src="/scripts/main.js"></script>
+    <script defer src="scripts/main.js"></script>
+    <script defer  src="/scripts/post.js"></script>
 </head>
 <body>
     <header>
@@ -15,10 +16,13 @@
     </header>
     <main>
         
-        <form id="postform"  method="post">
+        <form id="memberform" action="https://tribe.api.fdnd.nl/v1/member" method="post">
+
             <fieldset id="member">
 
-              <h3>Voeg Member Toe API</h3>
+                <h3>Voeg Member Toe API</h3>
+
+
               <label for="squad">Squad ID</label>
               <input type="text" id="squad">
 
@@ -34,7 +38,7 @@
               <label for="url">Url</label>
               <input type="url" id="url">
 
-              <button type="submit" id="submit">Add Post</button>
+              <button type="submit"  class="btn">Submit</button>
             
              <!-- <input type="submit" value="submit"    id="btn__submit"> -->
 
@@ -59,7 +63,7 @@
     </main>
 
     <footer>
-        <img src="imgs/logo.svg" alt="logo" width="100px">
+        <img src="imgs/logo.svg" alt="logo" class="logo" >
         
     </footer>
     
