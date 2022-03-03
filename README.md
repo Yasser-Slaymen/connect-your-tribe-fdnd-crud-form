@@ -14,7 +14,8 @@
 
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
+ 📸 ![Screenshot (211)](https://user-images.githubusercontent.com/90189815/156528241-ef000fba-633c-44cf-b661-2a3d77b4e666.png)
+
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
 ## Kenmerken
