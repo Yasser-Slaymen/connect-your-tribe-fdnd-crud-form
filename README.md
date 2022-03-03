@@ -17,9 +17,9 @@
 ## Installatie
 
 ## Gebruik
-*  ### HTML
-*  ### CSS
-*  ### JS
+*  ### ⚡HTML
+*  ### 🔅CSS
+*  ### 🎆JS
 
 ## Bronnen
 
