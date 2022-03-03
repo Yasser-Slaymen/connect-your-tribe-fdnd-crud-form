@@ -21,16 +21,17 @@ fetch(Base__Url + '/member')
     .then(data => renderMember(data))
 
 
-// Nieuwe members toevoegen
+// Nieuwe members toevoegen, 
+// meaking submit event for form
 
-form?.addEventListener('submit', (e) =>{
+form?.addEventListener('submit', (e) => {
     e.preventDefault()
     console.log('halll')
 
-    // LET values
+    // LET  meaking values
     let member = {
         memberId: ParseInt(memberForm.elements.memberId.value),
-            squadId: ParseInt(memberForm.elements.squadId.value),
+        squadId: ParseInt(memberForm.elements.squadId.value),
         type: memberForm.elements.type.value,
         nickname: memberForm.elements.nickname.value,
         name: memberForm.elements.name.value,
@@ -42,7 +43,8 @@ form?.addEventListener('submit', (e) =>{
             url: memberForm.elements.url.value,
       }
 
-    // fetching api
+    // fetching api, SEND DATA TO FORM
+
     fetch(Base__Url, {
         method: 'POST',
         headers: {
