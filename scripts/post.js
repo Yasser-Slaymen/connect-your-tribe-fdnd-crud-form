@@ -6,6 +6,8 @@ const apiUrl = 'https://tribe.api.fdnd.nl/v1/member';
 createStudentForm.addEventListener('submit', function (e) {
 
     e.preventDefault();
+    
+
 
     // Create a data object with data from the create form.
     let data = {
