@@ -21,43 +21,6 @@ fetch(Base__Url + '/member')
     .then(data => renderMember(data))
 
 
-// Nieuwe members toevoegen, 
-// meaking submit event for form
-
-form?.addEventListener('submit', (e) => {
-    e.preventDefault()
-    console.log('halll')
-
-    // LET  meaking values
-    let member = {
-        memberId: ParseInt(memberForm.elements.memberId.value),
-        squadId: ParseInt(memberForm.elements.squadId.value),
-        type: memberForm.elements.type.value,
-        nickname: memberForm.elements.nickname.value,
-        name: memberForm.elements.name.value,
-        prefix: memberForm.elements.prefix.value,
-        surname: memberForm.elements.surname.value,
-            avatar: memberForm.elements.avatar.value,
-            githubHandle: memberForm.elements.githubHandle.value,
-        bio: memberForm.elements.bio.value,
-            url: memberForm.elements.url.value,
-      }
-
-    // fetching api, SEND DATA TO FORM
-
-    fetch(Base__Url, {
-        method: 'POST',
-        headers: {
-            Accept: "application/json",
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-    }).then(function (res) {
-        return res.json;
-    }).catch(
-        error => console.log(error)
-    )
-})
 
 
 
